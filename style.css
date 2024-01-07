@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Rammetto+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header {
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    z-index: 1;
+    background-color: #F0DACD;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+header img {
+    width: 5vw;
+}
+
+header nav {
+    width: 15%;
+}
+
+header ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    transition: 0.3s ease-in-out;
+}
+
+header a {
+    text-decoration: none;
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 1vw;
+    font-weight: 700;
+    color: #E1EDE9;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a:hover,
+header li:hover {
+    filter: drop-shadow(0 0 0.1vw #6dbba186);
+    translate: 0 -0.1vw;
+}
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 7vw;
+    text-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+    color: #E1EDE9;
+}
+
+.gallery {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: #F7F2EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery h2 {
+    height: 20vh;
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    color: #E1EDE9;
+    padding-top: 5vw;
+}
+
+.gallery .container_category {
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery .block_category {
+    width: 20vw;
+    height: 50vh;
+    border: 0.3vw solid #FFFFFF;
+    border-radius: 1.5vw;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.2vw 0.2vw rgba(0, 0, 0, 0.3);
+    transition: 0.3s ease-in-out;
+}
+
+.gallery .block_category:hover {
+    cursor: pointer;
+    translate: 0 -1vw;
+    box-shadow: 0 0 1vw #a0dfca86;
+}
+
+.gallery .block_category img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .text_category {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.gallery h3 {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 1vw;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.2vw;
+    color: #E1EDE9;
+}
+
+.gallery .text_category span {
+    font-family: 'Capriola', sans-serif;
+    font-size: 0.75vw;
+    text-align: center;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    color: #F0DACD;
+    padding: 0 1vw;
+    letter-spacing: 0.1vw;
+}
+
+.form {
+    width: 100vw;
+    min-height: 90vh;
+    background-color: #E1EDE9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form .container {
+    width: 30vw;
+    height: 50vh;
+    background-color: #F7F2EC;
+    border-radius: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0.5vw;
+}
+
+.form .container div {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.form h2 {
+    font-family: 'Rammetto One', sans-serif;
+    font-size: 2.5vw;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    color: #E1EDE9;
+}
+
+.form img {
+    width: 4vw;
+}
+
+.form p {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1.1vw;
+    text-align: center;
+    text-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.5);
+    color: #F0DACD;
+    padding: 0 1vw;
+    letter-spacing: 0.1vw;
+}
+
+.form input {
+    width: 70%;
+    border: none;
+    outline: none;
+    border-radius: 0.2vw;
+    padding: 1vw;
+    transition: 0.3s ease-in-out;
+    font-family: 'Capriola', sans-serif;
+    font-size: 1vw;
+    color: gray;
+}
+
+.form input::placeholder {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1vw;
+    text-transform: lowercase;
+    color: gray;
+}
+
+.form input:focus {
+    box-shadow: 0 0 1vw #a0dfca86;
+}
+
+.form button {
+    border: none;
+    border-radius: 0.2vw;
+    background-color: #F0DACD;
+    text-transform: uppercase;
+    padding: 0.7vw 1.5vw;
+    transition: 0.3s ease-in-out;
+    font-family: 'Capriola', sans-serif;
+    font-size: 0.9vw;
+    font-weight: 700;
+    color: gray;
+}
+
+.form button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    letter-spacing: 0.1vw;
+}
+
+.form button:active {
+    scale: 0.9;
+}
+
+footer {
+    width: 100vw;
+    height: 10vh;
+    background-color: #F7F2EC;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+}
+
+footer img {
+    width: 5vw;
+}
+
+footer span {
+    font-family: 'Capriola', sans-serif;
+    font-size: 1vw;
+}
+
+@media  (max-width: 1000px) {
+    .gallery h2 {
+        height: 5vh;
+    }
+
+    .gallery .container_category {
+        flex-direction: column;
+    }
+
+    .gallery .block_category {
+        width: 35vw;
+        height: 25vh;
+    }
+}
